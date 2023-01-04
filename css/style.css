@@ -599,19 +599,15 @@ svg path {
   margin: 0 auto;
 }
 
+.no-webp .contact__map{
+  background: url("../img/map.jpg") center/cover no-repeat; }
+
 .contact__map {
   display: block;
   width: 100%;
   border-radius: 1.25rem;
   overflow: hidden;
   margin-bottom: 0.5625rem;
-}
-
-.contact__map img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .contact__links {
@@ -1411,3 +1407,5 @@ svg path {
     text-decoration: underline;
   }
 }
+
+.webp .contact__map{ background: url(../img/map.webp) center/cover no-repeat; }
