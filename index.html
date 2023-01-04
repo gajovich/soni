@@ -5,8 +5,8 @@
 	<title>HomePage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<script src="https://www.google.com/recaptcha/api.js?_v=20230104143329" async defer></script>
-	<link rel="stylesheet" href="css/style.min.css?_v=20230104143329">
+	<script src="https://www.google.com/recaptcha/api.js?_v=20230104145721" async defer></script>
+	<link rel="stylesheet" href="css/style.min.css?_v=20230104145721">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -100,7 +100,12 @@
 			<section class="contact">
 				<div class="contact__container">
 					<div class="contact__left">
-						<iframe class="contact__map" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.283505555924!2d72.8314144!3d19.139063500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7a575851eef%3A0xc1f40fa3560f4ce5!2s360%20Degrees%2C%20Andheri%20West%2C%20Mumbai!5e0!3m2!1sru!2sua!4v1671800783064!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<div id="map_container" class="map container-fluid">
+							<iframe class="contact__map" id="ymap_lazy" async data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.283505555924!2d72.8314144!3d19.139063500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7a575851eef%3A0xc1f40fa3560f4ce5!2s360%20Degrees%2C%20Andheri%20West%2C%20Mumbai!5e0!3m2!1sru!2sua!4v1671800783064!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+							<!-- <script id="ymap_lazy" async data-src="ссылка?_v=20230104145721"></script> -->
+						</div>
+
 						<div class="contact__links">
 							<a href="#">Privacy Policy</a>
 							<a href="#">Send Feedback</a>
@@ -150,7 +155,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230104143329"></script>
+	<script src="js/app.min.js?_v=20230104145721"></script>
 </body>
 
 </html>
