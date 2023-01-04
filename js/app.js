@@ -609,7 +609,7 @@
     const da = new DynamicAdapt("max");
     da.init();
     document.addEventListener("click", (function(e) {
-        if (e.target.closest(".fullscreen__button")) document.querySelector(".fullscreen__form").classList.add("_active"); else if (!e.target.closest(".fullscreen__form")) document.querySelector(".fullscreen__form").classList.remove("_active");
+        if (e.target.closest(".fullscreen__button") || e.target.closest(".reasons__button")) document.querySelector(".fullscreen__form").classList.add("_active"); else if (!e.target.closest(".fullscreen__form")) document.querySelector(".fullscreen__form").classList.remove("_active");
     }));
     window.addEventListener("DOMContentLoaded", (function() {
         [].forEach.call(document.querySelectorAll(".tel"), (function(input) {
