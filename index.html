@@ -5,8 +5,8 @@
 	<title>HomePage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<script src="https://www.google.com/recaptcha/api.js?_v=20230104175504" async defer></script>
-	<link rel="stylesheet" href="css/style.min.css?_v=20230104175504">
+	<!-- <script src="https://www.google.com/recaptcha/api.js?_v=20230225154714" async defer></script> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230225154714">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -34,39 +34,106 @@
 					<div class="fullscreen__body">
 						<h1 class="fullscreen__title">Sound Therapy is painless with no side effects</h1>
 						<button class="fullscreen__button">Get Details</button>
-						<div class="fullscreen__form form-fullscreen">
-							<h3 class="form-fullscreen__title">Contact us today</h3>
-							<form action="#" class="form">
+						<form action="#" class="fullscreen__form form">
+							<fieldset class="form__card _active">
+								<h3 class="form__title">Contact us today</h3>
 								<div class="form__row">
 									<label class="form__label" for="name">Name</label>
-									<input class="form__input" type="text" id="name" name="name" placeholder="Name" value="" required aria-required=”true” pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="firstname lastname">
+									<!-- <input class="form__input" type="text" id="name" name="name" placeholder="Name"
+										value="" required aria-required="true" pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+"
+										title="firstname lastname"> -->
+									<input class="form__input" type="text" id="name" name="name" placeholder="Name" value="">
 								</div>
 								<div class="form__row">
 									<label class="form__label" for="phone">Phone</label>
-									<input class="form__input tel" id="phone" type="text" value="" name="phone" placeholder="+91(000)000-00-00" required>
+									<!-- <input class="form__input tel" id="phone" type="text" value="" name="phone"
+										placeholder="+91(000)000-00-00" required> -->
+									<input class="form__input tel" id="phone" type="text" value="" name="phone" placeholder="+91(000)000-00-00">
 								</div>
 								<div class="form__row">
-									<label class="form__label">Question 1</label>
-									<select name="form[question_1]" data-class-modif="form">
-										<option value="1" selected>Lorum ipsum sit amet?</option>
-										<option value="2">Lorum ipsum sit amet? №2</option>
-										<option value="3">Lorum ipsum sit amet? №3</option>
-										<option value="4">Lorum ipsum sit amet? №4</option>
-									</select>
+									<label class="form__label" for="phone">Email [Optional]</label>
+									<input class="form__input email" id="email" type="text" value="" name="email" placeholder="Email">
 								</div>
-								<div class="form__row">
-									<label class="form__label">Question 2</label>
-									<select name="form[question_1]" data-class-modif="form">
-										<option value="1" selected>Lorum ipsum sit amet?</option>
-										<option value="2">Lorum ipsum sit amet? №2</option>
-										<option value="3">Lorum ipsum sit amet? №3</option>
-										<option value="4">Lorum ipsum sit amet? №4</option>
-									</select>
+								<p class="form__text">By Clicking Enquire now, You agree to the <a href="#">Terms
+										and Conditions</a></p>
+								<button type="button" class="form__button btn btn--next">Enquire Now</button>
+							</fieldset>
+							<fieldset class="form__card">
+								<h3 class="form__title">Please fill in the details</h3>
+								<div class="form__row form__row--col">
+									<label class="form__label" for="question1">Question 1</label>
+									<textarea class="form__input form__textarea" name="question1" id="question1"></textarea>
 								</div>
-								<div class="g-recaptcha" data-sitekey=""></div>
-								<button type="submit" class="form__button btn">Submit Now</button>
-							</form>
-						</div>
+								<div class="form__row form__row--col">
+									<label class="form__label" for="question2">Question 2</label>
+									<textarea class="form__input form__textarea" name="question2" id="question2"></textarea>
+								</div>
+								<div class="form__row form__row--col">
+									<label class="form__label">Question 3</label>
+									<div class="form__checkboxes">
+										<div class="checkbox">
+											<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="question3">
+											<label for="c_1" class="checkbox__label"><span class="checkbox__text">1
+													BHK</span></label>
+										</div>
+										<div class="checkbox">
+											<input id="c_2" class="checkbox__input" type="checkbox" value="2" name="question3">
+											<label for="c_2" class="checkbox__label"><span class="checkbox__text">2
+													BHK</span></label>
+										</div>
+										<div class="checkbox">
+											<input id="c_3" class="checkbox__input" type="checkbox" value="3" name="question3">
+											<label for="c_3" class="checkbox__label"><span class="checkbox__text">3
+													BHK</span></label>
+										</div>
+										<div class="checkbox">
+											<input id="c_4" class="checkbox__input" type="checkbox" value="4" name="question3">
+											<label for="c_4" class="checkbox__label"><span class="checkbox__text">4
+													BHK</span></label>
+										</div>
+									</div>
+								</div>
+								<div class="form__btns">
+									<button type="button" class="form__button btn btn--prev">Previous</button>
+									<button type="button" class="form__button btn btn--next">Next Step</button>
+								</div>
+							</fieldset>
+							<fieldset class="form__card">
+								<h3 class="form__title">Best time to contact you</h3>
+								<div class="form__row form__row--col">
+									<input class="form__input" data-datepicker type="text" name="date" placeholder="Select a date">
+								</div>
+								<div class="form__row form__row--col">
+									<div class="form__checkboxes">
+										<div class="checkbox">
+											<input id="c2_1" class="checkbox__input" type="checkbox" value="1" name="time">
+											<label for="c2_1" class="checkbox__label"><span class="checkbox__text">9 AM
+													– 12 PM</span></label>
+										</div>
+										<div class="checkbox">
+											<input id="c2_2" class="checkbox__input" type="checkbox" value="2" name="time">
+											<label for="c2_2" class="checkbox__label"><span class="checkbox__text">1 PM
+													– 3 PM</span></label>
+										</div>
+										<div class="checkbox">
+											<input id="c2_3" class="checkbox__input" type="checkbox" value="3" name="time">
+											<label for="c2_3" class="checkbox__label"><span class="checkbox__text">3 PM
+													– 6 PM</span></label>
+										</div>
+										<div class="checkbox">
+											<input id="c2_4" class="checkbox__input" type="checkbox" value="4" name="time">
+											<label for="c2_4" class="checkbox__label"><span class="checkbox__text">8 PM
+													– 10 PM</span></label>
+										</div>
+									</div>
+								</div>
+								<div class="form__btns">
+									<button type="button" class="form__button btn btn--prev">Previous</button>
+									<button type="submit" class="form__button btn">Submit</button>
+								</div>
+							</fieldset>
+							<!-- <div class="g-recaptcha" data-sitekey=""></div> -->
+						</form>
 					</div>
 				</div>
 			</section>
@@ -152,7 +219,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230104175504"></script>
+	<script src="js/app.min.js?_v=20230225154714"></script>
 </body>
 
 </html>
