@@ -636,7 +636,6 @@ svg path {
 }
 
 .form {
-  margin: 0.625rem 0;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 40.7%;
           flex: 0 0 40.7%;
@@ -1217,6 +1216,10 @@ svg path {
 }
 
 @media (min-width: 47.99875em) {
+  .form {
+    margin: 0.625rem 0;
+  }
+
   .menu__list {
     display: -webkit-box;
     display: -ms-flexbox;
