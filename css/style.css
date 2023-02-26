@@ -636,6 +636,7 @@ svg path {
 }
 
 .form {
+  margin: 0.625rem 0;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 40.7%;
           flex: 0 0 40.7%;
@@ -680,9 +681,24 @@ svg path {
   width: 100%;
 }
 
+.form__map {
+  width: 100%;
+  height: 9.375rem;
+  margin-bottom: 0.625rem;
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+
+.form__map img,
+.form__map iframe {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .form__title {
   font-weight: 700;
-  font-size: 1.75rem;
   line-height: 1.3928571429;
   margin-bottom: 1.0625rem;
 }
@@ -1281,6 +1297,10 @@ svg path {
     font-size: 1.125rem;
   }
 
+  .form__title {
+    font-size: 1.75rem;
+  }
+
   .form__label {
     font-size: 1rem;
   }
@@ -1405,6 +1425,10 @@ svg path {
 
   .text {
     font-size: 0.875rem;
+  }
+
+  .form__title {
+    font-size: 1.25rem;
   }
 
   .form__label {
@@ -1825,6 +1849,18 @@ svg path {
 @supports not (font-size: clamp( 0.875rem , 0.7851123596rem  +  0.4494382022vw , 1.125rem )) {
     .text {
       font-size: calc(0.875rem + 0.25 * (100vw - 20rem) / 55.625);
+    }
+}
+
+@supports (font-size: clamp( 1.25rem , 1.0702247191rem  +  0.8988764045vw , 1.75rem )) {
+    .form__title {
+      font-size: clamp( 1.25rem , 1.0702247191rem  +  0.8988764045vw , 1.75rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.25rem , 1.0702247191rem  +  0.8988764045vw , 1.75rem )) {
+    .form__title {
+      font-size: calc(1.25rem + 0.5 * (100vw - 20rem) / 55.625);
     }
 }
 

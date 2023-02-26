@@ -1017,8 +1017,9 @@
             }));
         }
         var datepicker_min = __webpack_require__(448);
-        if (document.querySelector("[data-datepicker]")) {
-            const picker = datepicker_min("[data-datepicker]", {
+        let datepickers = document.querySelectorAll("[data-datepicker]");
+        if (datepickers) for (let i = 0; i < datepickers.length; i++) {
+            const picker = datepicker_min(datepickers[i], {
                 customDays: [ "Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat" ],
                 customMonths: [ "Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec" ],
                 startDay: 1,
@@ -4589,6 +4590,22 @@
                 map_block.setAttribute("src", map_block.getAttribute("data-src"));
                 map_block.removeAttribute("data-src");
             }
+        }
+        let script_form = document.querySelector(".fullscreen__form");
+        script_form.addEventListener("submit", (e => {
+            e.preventDefault();
+        }));
+        let x = document.getElementById("demo");
+        let demoBtn = document.getElementById("submit");
+        demoBtn.addEventListener("click", (() => {
+            getLocation();
+            console.log("zdsfvgsadf");
+        }));
+        function getLocation() {
+            if (navigator.geolocation) navigator.geolocation.getCurrentPosition(showPosition); else x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
         }
         isWebp();
         menuInit();

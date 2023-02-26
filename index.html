@@ -5,8 +5,8 @@
 	<title>HomePage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<!-- <script src="https://www.google.com/recaptcha/api.js?_v=20230226135048" async defer></script> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230226135048">
+	<!-- <script src="https://www.google.com/recaptcha/api.js?_v=20230226194106" async defer></script> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230226194106">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -129,7 +129,38 @@
 								</div>
 								<div class="form__btns">
 									<button type="button" class="form__button btn btn--prev">Previous</button>
-									<button type="submit" class="form__button btn">Submit</button>
+									<button type="button" class="form__button btn btn--next">Next</button>
+								</div>
+							</fieldset>
+							<fieldset class="form__card">
+								<h3 class="form__title">Share your Location</h3>
+								<div class="form__map">
+									<picture><source srcset="img/map.webp" type="image/webp"><img src="img/map.jpg" alt="map"></picture>
+								</div>
+								<div class="form__row form__row--col">
+									<label class="form__label" for="visitdate">Select your preffered visit date</label>
+									<input class="form__input" name="visitdate" data-datepicker type="text" id="visitdate"></input>
+								</div>
+								<div class="form__row form__row--col">
+									<label class="form__label" for="Pincode">Pincode</label>
+									<input class="form__input" name="Pincode" type="text" id="Pincode"></input>
+								</div>
+								<div class="form__row form__row--col">
+									<label class="form__label" for="House">House/Flat</label>
+									<input class="form__input" name="House" type="text" id="House"></input>
+								</div>
+								<div class="form__row form__row--col">
+									<label class="form__label" for="Apartment">Apartment Name/Street name</label>
+									<input class="form__input" name="Apartment" type="text" id="Apartment"></input>
+								</div>
+								<div class="form__row form__row--col">
+									<label class="form__label" for="Area">Area Name</label>
+									<input class="form__input" name="Area" type="text" id="Area"></input>
+								</div>
+								<p id="demo"></p>
+								<div class="form__btns">
+									<button type="button" class="form__button btn btn--prev">Previous</button>
+									<button type="submit" id="submit" class="form__button btn">Submit</button>
 								</div>
 							</fieldset>
 							<!-- <div class="g-recaptcha" data-sitekey=""></div> -->
@@ -320,7 +351,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230226135048"></script>
+	<script src="js/app.min.js?_v=20230226194106"></script>
 </body>
 
 </html>
