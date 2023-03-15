@@ -5,8 +5,8 @@
 	<title>HomePage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<!-- <script src="https://www.google.com/recaptcha/api.js?_v=20230226200454" async defer></script> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230226200454">
+	<!-- <script src="https://www.google.com/recaptcha/api.js?_v=20230315113825" async defer></script> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230315113825">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -34,7 +34,7 @@
 					<div class="fullscreen__body">
 						<h1 class="fullscreen__title">Sound Therapy is painless with no side effects</h1>
 						<button class="fullscreen__button">Get Details</button>
-						<form action="#" class="fullscreen__form form">
+						<form id="form" action="https://private-c4cefc-codepenvf.apiary-mock.com/sendform" class="fullscreen__form form" data-da=".reasons, 767.98,0">
 							<fieldset class="form__card _active">
 								<h3 class="form__title">Contact us today</h3>
 								<div class="form__row">
@@ -42,13 +42,13 @@
 									<!-- <input class="form__input" type="text" id="name" name="name" placeholder="Name"
 										value="" required aria-required="true" pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+"
 										title="firstname lastname"> -->
-									<input class="form__input" type="text" id="name" name="name" placeholder="Name" value="">
+									<input class="form__input" type="text" id="name" name="name" placeholder="Name" value="" data-required>
 								</div>
 								<div class="form__row">
 									<label class="form__label" for="phone">Phone</label>
 									<!-- <input class="form__input tel" id="phone" type="text" value="" name="phone"
 										placeholder="+91(000)000-00-00" required> -->
-									<input class="form__input tel" id="phone" type="text" value="" name="phone" placeholder="+91(000)000-00-00">
+									<input class="form__input tel" id="phone" type="text" value="" name="phone" placeholder="+91(000)000-00-00" data-required>
 								</div>
 								<div class="form__row">
 									<label class="form__label" for="phone">Email [Optional]</label>
@@ -56,23 +56,47 @@
 								</div>
 								<p class="form__text">By Clicking Enquire now, You agree to the <a href="#">Terms
 										and Conditions</a></p>
-								<button type="button" class="form__button btn btn--next">Enquire Now</button>
+								<button type="submit" class="form__button btn btn--next">Enquire Now</button>
 							</fieldset>
 							<fieldset class="form__card">
 								<h3 class="form__title">Please fill in the details</h3>
-								<div class="form__row form__row--col">
+								<!-- <div class="form__row form__row--col">
 									<label class="form__label" for="question1">Question 1</label>
-									<textarea class="form__input form__textarea" name="question1" id="question1"></textarea>
+									<textarea class="form__input form__textarea" name="question1"
+										id="question1"></textarea>
 								</div>
 								<div class="form__row form__row--col">
 									<label class="form__label" for="question2">Question 2</label>
-									<textarea class="form__input form__textarea" name="question2" id="question2"></textarea>
+									<textarea class="form__input form__textarea" name="question2"
+										id="question2"></textarea>
+								</div> -->
+								<div class="form__row form__row--col">
+									<label class="form__label">Question 1</label>
+									<select name="select" data-class-modif="form">
+										<option value="1" selected>View Options</option>
+										<option value="2">Lorum ipsum sit amet? №2</option>
+										<option value="3">Lorum ipsum sit amet? №3</option>
+										<option value="4">Lorum ipsum sit amet? №4</option>
+									</select>
+								</div>
+								<div class="form__row form__row--col">
+									<label class="form__label" for="question2">Question 2</label>
+									<div class="options">
+										<div class="options__item">
+											<input id="o_1" class="options__input" checked type="radio" value="1" name="option">
+											<label for="o_1" class="options__label"><span class="options__text">Yes</span></label>
+										</div>
+										<div class="options__item">
+											<input id="o_2" class="options__input" type="radio" value="2" name="option">
+											<label for="o_2" class="options__label"><span class="options__text">No</span></label>
+										</div>
+									</div>
 								</div>
 								<div class="form__row form__row--col">
 									<label class="form__label">Question 3</label>
 									<div class="form__checkboxes">
 										<div class="checkbox">
-											<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="question3">
+											<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="question3" checked>
 											<label for="c_1" class="checkbox__label"><span class="checkbox__text">1
 													BHK</span></label>
 										</div>
@@ -95,7 +119,7 @@
 								</div>
 								<div class="form__btns">
 									<button type="button" class="form__button btn btn--prev">Previous</button>
-									<button type="button" class="form__button btn btn--next">Next Step</button>
+									<button type="submit" class="form__button btn btn--next">Next Step</button>
 								</div>
 							</fieldset>
 							<fieldset class="form__card">
@@ -106,7 +130,7 @@
 								<div class="form__row form__row--col">
 									<div class="form__checkboxes">
 										<div class="checkbox">
-											<input id="c2_1" class="checkbox__input" type="checkbox" value="1" name="time">
+											<input id="c2_1" class="checkbox__input" type="checkbox" value="1" name="time" checked>
 											<label for="c2_1" class="checkbox__label"><span class="checkbox__text">9 AM
 													– 12 PM</span></label>
 										</div>
@@ -129,7 +153,7 @@
 								</div>
 								<div class="form__btns">
 									<button type="button" class="form__button btn btn--prev">Previous</button>
-									<button type="button" class="form__button btn btn--next">Next</button>
+									<button type="submit" class="form__button btn btn--next">Next</button>
 								</div>
 							</fieldset>
 							<fieldset class="form__card">
@@ -189,6 +213,10 @@
 							elit, sed do
 							eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
 					</ul>
+				</div>
+			</section>
+			<section class="button-text">
+				<div class="button-text__container">
 					<p class="reasons__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						eiusmod
 						tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -351,7 +379,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230226200454"></script>
+	<script src="js/app.min.js?_v=20230315113825"></script>
 </body>
 
 </html>
