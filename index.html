@@ -5,8 +5,8 @@
 	<title>HomePage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<!-- <script src="https://www.google.com/recaptcha/api.js?_v=20230315113825" async defer></script> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230315113825">
+	<!-- <script src="https://www.google.com/recaptcha/api.js?_v=20230403123548" async defer></script> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230403123548">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -29,7 +29,7 @@
 		</header>
 		<main class="page">
 			<section class="fullscreen">
-				<picture><source srcset="img/pexels.webp" type="image/webp"><img class="fullscreen__image" src="img/pexels.jpg" alt="Image"></picture>
+				<picture><source srcset="img/pexels.webp" type="image/webp"><img class="fullscreen__image" src="img/pexels.jpg" alt="Image" /></picture>
 				<div class="fullscreen__container">
 					<div class="fullscreen__body">
 						<h1 class="fullscreen__title">Sound Therapy is painless with no side effects</h1>
@@ -42,20 +42,21 @@
 									<!-- <input class="form__input" type="text" id="name" name="name" placeholder="Name"
 										value="" required aria-required="true" pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+"
 										title="firstname lastname"> -->
-									<input class="form__input" type="text" id="name" name="name" placeholder="Name" value="" data-required>
+									<input class="form__input" type="text" id="name" name="name" placeholder="Name" value="" data-required />
 								</div>
 								<div class="form__row">
 									<label class="form__label" for="phone">Phone</label>
 									<!-- <input class="form__input tel" id="phone" type="text" value="" name="phone"
 										placeholder="+91(000)000-00-00" required> -->
-									<input class="form__input tel" id="phone" type="text" value="" name="phone" placeholder="+91(000)000-00-00" data-required>
+									<input class="form__input tel" id="phone" type="text" value="" name="phone" placeholder="+91(000)000-00-00" data-required />
 								</div>
 								<div class="form__row">
 									<label class="form__label" for="phone">Email [Optional]</label>
-									<input class="form__input email" id="email" type="text" value="" name="email" placeholder="Email">
+									<input class="form__input email" id="email" type="text" value="" name="email" placeholder="Email" />
 								</div>
-								<p class="form__text">By Clicking Enquire now, You agree to the <a href="#">Terms
-										and Conditions</a></p>
+								<p class="form__text">
+									By Clicking Enquire now, You agree to the <a href="#">Terms and Conditions</a>
+								</p>
 								<button type="submit" class="form__button btn btn--next">Enquire Now</button>
 							</fieldset>
 							<fieldset class="form__card">
@@ -83,11 +84,11 @@
 									<label class="form__label" for="question2">Question 2</label>
 									<div class="options">
 										<div class="options__item">
-											<input id="o_1" class="options__input" checked type="radio" value="1" name="option">
+											<input id="o_1" class="options__input" checked type="radio" value="1" name="option" />
 											<label for="o_1" class="options__label"><span class="options__text">Yes</span></label>
 										</div>
 										<div class="options__item">
-											<input id="o_2" class="options__input" type="radio" value="2" name="option">
+											<input id="o_2" class="options__input" type="radio" value="2" name="option" />
 											<label for="o_2" class="options__label"><span class="options__text">No</span></label>
 										</div>
 									</div>
@@ -96,24 +97,20 @@
 									<label class="form__label">Question 3</label>
 									<div class="form__checkboxes">
 										<div class="checkbox">
-											<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="question3" checked>
-											<label for="c_1" class="checkbox__label"><span class="checkbox__text">1
-													BHK</span></label>
+											<input id="c_1" class="checkbox__input" type="checkbox" value="1" name="question3" checked />
+											<label for="c_1" class="checkbox__label"><span class="checkbox__text">1 BHK</span></label>
 										</div>
 										<div class="checkbox">
-											<input id="c_2" class="checkbox__input" type="checkbox" value="2" name="question3">
-											<label for="c_2" class="checkbox__label"><span class="checkbox__text">2
-													BHK</span></label>
+											<input id="c_2" class="checkbox__input" type="checkbox" value="2" name="question3" />
+											<label for="c_2" class="checkbox__label"><span class="checkbox__text">2 BHK</span></label>
 										</div>
 										<div class="checkbox">
-											<input id="c_3" class="checkbox__input" type="checkbox" value="3" name="question3">
-											<label for="c_3" class="checkbox__label"><span class="checkbox__text">3
-													BHK</span></label>
+											<input id="c_3" class="checkbox__input" type="checkbox" value="3" name="question3" />
+											<label for="c_3" class="checkbox__label"><span class="checkbox__text">3 BHK</span></label>
 										</div>
 										<div class="checkbox">
-											<input id="c_4" class="checkbox__input" type="checkbox" value="4" name="question3">
-											<label for="c_4" class="checkbox__label"><span class="checkbox__text">4
-													BHK</span></label>
+											<input id="c_4" class="checkbox__input" type="checkbox" value="4" name="question3" />
+											<label for="c_4" class="checkbox__label"><span class="checkbox__text">4 BHK</span></label>
 										</div>
 									</div>
 								</div>
@@ -125,29 +122,25 @@
 							<fieldset class="form__card">
 								<h3 class="form__title">Best time to contact you</h3>
 								<div class="form__row form__row--col">
-									<input class="form__input" data-datepicker type="text" name="date" placeholder="Select a date">
+									<input class="form__input" data-datepicker type="text" name="date" placeholder="Select a date" />
 								</div>
 								<div class="form__row form__row--col">
 									<div class="form__checkboxes">
 										<div class="checkbox">
-											<input id="c2_1" class="checkbox__input" type="checkbox" value="1" name="time" checked>
-											<label for="c2_1" class="checkbox__label"><span class="checkbox__text">9 AM
-													– 12 PM</span></label>
+											<input id="c2_1" class="checkbox__input" type="checkbox" value="1" name="time" checked />
+											<label for="c2_1" class="checkbox__label"><span class="checkbox__text">9 AM – 12 PM</span></label>
 										</div>
 										<div class="checkbox">
-											<input id="c2_2" class="checkbox__input" type="checkbox" value="2" name="time">
-											<label for="c2_2" class="checkbox__label"><span class="checkbox__text">1 PM
-													– 3 PM</span></label>
+											<input id="c2_2" class="checkbox__input" type="checkbox" value="2" name="time" />
+											<label for="c2_2" class="checkbox__label"><span class="checkbox__text">1 PM – 3 PM</span></label>
 										</div>
 										<div class="checkbox">
-											<input id="c2_3" class="checkbox__input" type="checkbox" value="3" name="time">
-											<label for="c2_3" class="checkbox__label"><span class="checkbox__text">3 PM
-													– 6 PM</span></label>
+											<input id="c2_3" class="checkbox__input" type="checkbox" value="3" name="time" />
+											<label for="c2_3" class="checkbox__label"><span class="checkbox__text">3 PM – 6 PM</span></label>
 										</div>
 										<div class="checkbox">
-											<input id="c2_4" class="checkbox__input" type="checkbox" value="4" name="time">
-											<label for="c2_4" class="checkbox__label"><span class="checkbox__text">8 PM
-													– 10 PM</span></label>
+											<input id="c2_4" class="checkbox__input" type="checkbox" value="4" name="time" />
+											<label for="c2_4" class="checkbox__label"><span class="checkbox__text">8 PM – 10 PM</span></label>
 										</div>
 									</div>
 								</div>
@@ -159,27 +152,27 @@
 							<fieldset class="form__card">
 								<h3 class="form__title">Share your Location</h3>
 								<div class="form__map">
-									<picture><source srcset="img/map.webp" type="image/webp"><img src="img/map.jpg" alt="map"></picture>
+									<picture><source srcset="img/map.webp" type="image/webp"><img src="img/map.jpg" alt="map" /></picture>
 								</div>
 								<div class="form__row form__row--col">
 									<label class="form__label" for="visitdate">Select your preffered visit date</label>
-									<input class="form__input" name="visitdate" data-datepicker type="text" id="visitdate"></input>
+									<input class="form__input" name="visitdate" data-datepicker type="text" id="visitdate" />
 								</div>
 								<div class="form__row form__row--col">
 									<label class="form__label" for="Pincode">Pincode</label>
-									<input class="form__input" name="Pincode" type="text" id="Pincode"></input>
+									<input class="form__input" name="Pincode" type="text" id="Pincode" />
 								</div>
 								<div class="form__row form__row--col">
 									<label class="form__label" for="House">House/Flat</label>
-									<input class="form__input" name="House" type="text" id="House"></input>
+									<input class="form__input" name="House" type="text" id="House" />
 								</div>
 								<div class="form__row form__row--col">
 									<label class="form__label" for="Apartment">Apartment Name/Street name</label>
-									<input class="form__input" name="Apartment" type="text" id="Apartment"></input>
+									<input class="form__input" name="Apartment" type="text" id="Apartment" />
 								</div>
 								<div class="form__row form__row--col">
 									<label class="form__label" for="Area">Area Name</label>
-									<input class="form__input" name="Area" type="text" id="Area"></input>
+									<input class="form__input" name="Area" type="text" id="Area" />
 								</div>
 								<p id="demo"></p>
 								<div class="form__btns">
@@ -196,39 +189,46 @@
 				<div class="reasons__container">
 					<div class="reasons__quote">
 						<div class="reasons__quote-image">
-							<picture><source srcset="img/person.webp" type="image/webp"><img src="img/person.jpg" alt="Person"></picture>
+							<picture><source srcset="img/person.webp" type="image/webp"><img src="img/person.jpg" alt="Person" /></picture>
 						</div>
-						<blockquote class="reasons__quote-text">“Dr Jacab solved my depression with no medication in 20
-							days”</blockquote>
+						<blockquote class="reasons__quote-text">
+							“Dr Jacab solved my depression with no medication in 20 days”
+						</blockquote>
 					</div>
 					<h2 class="reasons__title title">3 Reasons why us</h2>
 					<ul class="reasons__list">
-						<li class="reasons__item text"><span>1.</span>Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-						<li class="reasons__item text"><span>2.</span>Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-						<li class="reasons__item text"><span>3.</span>Lorem ipsum dolor sit amet, consectetur adipiscing
-							elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+						<li class="reasons__item text">
+							<span>1.</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</li>
+						<li class="reasons__item text">
+							<span>2.</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</li>
+						<li class="reasons__item text">
+							<span>3.</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</li>
 					</ul>
 				</div>
 			</section>
 			<section class="button-text">
 				<div class="button-text__container">
-					<p class="reasons__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod
-						tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p class="reasons__text text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna aliqua.
+					</p>
 					<a href="#" class="reasons__button btn">Book an appointment</a>
 				</div>
 			</section>
 			<section class="youtube">
 				<div class="youtube__container">
 					<h2 class="youtube__title title">Lorem ipsum dolor sit amet.</h2>
-					<p class="youtube__text text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-						deserunt eum adipisci similique asperiores quo labore. Facilis labore perspiciatis mollitia
-						doloremque cumque.</p>
+					<p class="youtube__text text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias deserunt eum adipisci
+						similique asperiores quo labore. Facilis labore perspiciatis mollitia doloremque
+						cumque.
+					</p>
 					<div class="youtube__video">
 						<iframe class="lazyload" data-src="https://www.youtube.com/embed/vKDCToRa5kA" title="Godrej Splendour, Whitefield, Bangalore | Project Walkthrough" allowfullscreen></iframe>
 					</div>
@@ -237,77 +237,96 @@
 			<section class="carousel">
 				<div class="carousel__container">
 					<h2 class="carousel__title title">Some title</h2>
-					<p class="carousel__text text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet,
-						corrupti?</p>
+					<p class="carousel__text text">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, corrupti?
+					</p>
 					<div class="carousel__body">
 						<div class="carousel__slider swiper">
 							<div class="carousel__wrapper swiper-wrapper">
-								<a href="#" class="carousel__slide slide-carousel swiper-slide">
-									<div class="slide-carousel__img">
-										<picture><source data-srcset="img/pexels.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazyload" data-src="img/pexels.jpg" alt="Image"></picture>
+								<div class="carousel__slide slide-carousel swiper-slide">
+									<div data-gallery class="slide-carousel__img">
+										<a href="img/pexels.jpg" class="gallery__image">
+											<picture><source data-srcset="img/pexels.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazyload" data-src="img/pexels.jpg" alt="Image" /></picture>
+										</a>
 									</div>
 									<div class="slide-carousel__content">
 										<div class="slide-carousel__title">Lorem, ipsum dolor.</div>
-										<div class="slide-carousel__text">Lorem ipsum dolor sit, amet consectetur
-											adipisicing elit. Omnis quaerat sint quia accusamus aspernatur facilis?
+										<div class="slide-carousel__text">
+											Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis quaerat sint
+											quia accusamus aspernatur facilis?
 										</div>
 									</div>
-								</a>
-								<a href="#" class="carousel__slide slide-carousel swiper-slide">
-									<div class="slide-carousel__img">
-										<picture><source data-srcset="img/pexels.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazyload" data-src="img/pexels.jpg" alt="Image"></picture>
+								</div>
+								<div class="carousel__slide slide-carousel swiper-slide">
+									<div data-gallery class="slide-carousel__img">
+										<a href="img/pexels.jpg" class="gallery__image">
+											<picture><source data-srcset="img/pexels.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazyload" data-src="img/pexels.jpg" alt="Image" /></picture>
+										</a>
 									</div>
 									<div class="slide-carousel__content">
 										<div class="slide-carousel__title">Lorem, ipsum dolor.</div>
-										<div class="slide-carousel__text">Lorem ipsum dolor sit, amet consectetur
-											adipisicing elit. Omnis quaerat sint quia accusamus aspernatur facilis?
+										<div class="slide-carousel__text">
+											Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis quaerat sint
+											quia accusamus aspernatur facilis?
 										</div>
 									</div>
-								</a>
-								<a href="#" class="carousel__slide slide-carousel swiper-slide">
-									<div class="slide-carousel__img">
-										<picture><source data-srcset="img/pexels.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazyload" data-src="img/pexels.jpg" alt="Image"></picture>
+								</div>
+								<div class="carousel__slide slide-carousel swiper-slide">
+									<div data-gallery class="slide-carousel__img">
+										<a href="img/pexels.jpg" class="gallery__image">
+											<picture><source data-srcset="img/pexels.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazyload" data-src="img/pexels.jpg" alt="Image" /></picture>
+										</a>
 									</div>
 									<div class="slide-carousel__content">
 										<div class="slide-carousel__title">Lorem, ipsum dolor.</div>
-										<div class="slide-carousel__text">Lorem ipsum dolor sit, amet consectetur
-											adipisicing elit. Omnis quaerat sint quia accusamus aspernatur facilis?
+										<div class="slide-carousel__text">
+											Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis quaerat sint
+											quia accusamus aspernatur facilis?
 										</div>
 									</div>
-								</a>
-								<a href="#" class="carousel__slide slide-carousel swiper-slide">
-									<div class="slide-carousel__img">
-										<picture><source data-srcset="img/pexels.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazyload" data-src="img/pexels.jpg" alt="Image"></picture>
+								</div>
+								<div class="carousel__slide slide-carousel swiper-slide">
+									<div data-gallery class="slide-carousel__img">
+										<a href="img/pexels.jpg" class="gallery__image">
+											<picture><source data-srcset="img/pexels.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazyload" data-src="img/pexels.jpg" alt="Image" /></picture>
+										</a>
 									</div>
 									<div class="slide-carousel__content">
 										<div class="slide-carousel__title">Lorem, ipsum dolor.</div>
-										<div class="slide-carousel__text">Lorem ipsum dolor sit, amet consectetur
-											adipisicing elit. Omnis quaerat sint quia accusamus aspernatur facilis?
+										<div class="slide-carousel__text">
+											Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis quaerat sint
+											quia accusamus aspernatur facilis?
 										</div>
 									</div>
-								</a>
-								<a href="#" class="carousel__slide slide-carousel swiper-slide">
-									<div class="slide-carousel__img">
-										<picture><source data-srcset="img/pexels.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazyload" data-src="img/pexels.jpg" alt="Image"></picture>
+								</div>
+								<div class="carousel__slide slide-carousel swiper-slide">
+									<div data-gallery class="slide-carousel__img">
+										<a href="img/pexels.jpg" class="gallery__image">
+											<picture><source data-srcset="img/pexels.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazyload" data-src="img/pexels.jpg" alt="Image" /></picture>
+										</a>
 									</div>
 									<div class="slide-carousel__content">
 										<div class="slide-carousel__title">Lorem, ipsum dolor.</div>
-										<div class="slide-carousel__text">Lorem ipsum dolor sit, amet consectetur
-											adipisicing elit. Omnis quaerat sint quia accusamus aspernatur facilis?
+										<div class="slide-carousel__text">
+											Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis quaerat sint
+											quia accusamus aspernatur facilis?
 										</div>
 									</div>
-								</a>
-								<a href="#" class="carousel__slide slide-carousel swiper-slide">
-									<div class="slide-carousel__img">
-										<picture><source data-srcset="img/pexels.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazyload" data-src="img/pexels.jpg" alt="Image"></picture>
+								</div>
+								<div class="carousel__slide slide-carousel swiper-slide">
+									<div data-gallery class="slide-carousel__img">
+										<a href="img/pexels.jpg" class="gallery__image">
+											<picture><source data-srcset="img/pexels.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazyload" data-src="img/pexels.jpg" alt="Image" /></picture>
+										</a>
 									</div>
 									<div class="slide-carousel__content">
 										<div class="slide-carousel__title">Lorem, ipsum dolor.</div>
-										<div class="slide-carousel__text">Lorem ipsum dolor sit, amet consectetur
-											adipisicing elit. Omnis quaerat sint quia accusamus aspernatur facilis?
+										<div class="slide-carousel__text">
+											Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis quaerat sint
+											quia accusamus aspernatur facilis?
 										</div>
 									</div>
-								</a>
+								</div>
 							</div>
 							<div class="swiper-pagination"></div>
 							<button type="button" class="swiper-button-prev">
@@ -328,7 +347,7 @@
 				<div class="contact__container">
 					<div class="contact__left">
 						<div id="map_container" class="map container-fluid">
-							<iframe class="contact__map" id="ymap_lazy" async data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.283505555924!2d72.8314144!3d19.139063500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7a575851eef%3A0xc1f40fa3560f4ce5!2s360%20Degrees%2C%20Andheri%20West%2C%20Mumbai!5e0!3m2!1sru!2sua!4v1671800783064!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							<iframe class="contact__map" id="ymap_lazy" async data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.283505555924!2d72.8314144!3d19.139063500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7a575851eef%3A0xc1f40fa3560f4ce5!2s360%20Degrees%2C%20Andheri%20West%2C%20Mumbai!5e0!3m2!1sru!2sua!4v1671800783064!5m2!1sru!2sua" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 						</div>
 						<div class="contact__links">
 							<a href="#">Privacy Policy</a>
@@ -357,16 +376,17 @@
 			<div class="bar">
 				<div class="bar__container">
 					<div class="bar__row">
+						<div class="bar__label">Get Response Within xx Minutes</div>
 						<a href="#" class="bar__item">
-							<img class="bar__img" src="img/icons/whatsapp.svg" alt="Icon">
+							<img class="bar__img" src="img/icons/whatsapp.svg" alt="Icon" />
 							<p class="bar__text">Whasapp</p>
 						</a>
 						<a href="#" class="bar__item">
-							<img class="bar__img" src="img/icons/phone.svg" alt="Icon">
+							<img class="bar__img" src="img/icons/phone.svg" alt="Icon" />
 							<p class="bar__text">Call Now</p>
 						</a>
 						<a href="#" class="bar__item">
-							<img class="bar__img" src="img/icons/calendar.svg" alt="Icon">
+							<img class="bar__img" src="img/icons/calendar.svg" alt="Icon" />
 							<p class="bar__text">Appointment</p>
 						</a>
 					</div>
@@ -379,7 +399,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230315113825"></script>
+	<script src="js/app.min.js?_v=20230403123548"></script>
 </body>
 
 </html>
