@@ -6710,6 +6710,10 @@ PERFORMANCE OF THIS SOFTWARE.
         let required = true;
         document.addEventListener("click", (function(e) {
             required = required = true;
+            if (e.target.closest(".form__close")) {
+                document.querySelector(".fullscreen__form").classList.remove("_active");
+                console.log("sdfg");
+            }
             if (e.target.closest(".fullscreen__button") || e.target.closest(".reasons__button")) document.querySelector(".fullscreen__form").classList.add("_active"); else if (!e.target.closest(".fullscreen__form")) document.querySelector(".fullscreen__form").classList.remove("_active");
             if (e.target.closest(".btn--next")) {
                 let currentCard = e.target.closest(".form__card");
@@ -6769,27 +6773,6 @@ PERFORMANCE OF THIS SOFTWARE.
                 input.addEventListener("keydown", mask, false);
             }));
         }));
-        let map_container = document.getElementById("map_container");
-        let options_map = {
-            once: true,
-            passive: true,
-            capture: true
-        };
-        map_container.addEventListener("touchstart", start_lazy_map, options_map);
-        map_container.addEventListener("touchend", start_lazy_map, options_map);
-        map_container.addEventListener("touchcancel", start_lazy_map, options_map);
-        map_container.addEventListener("touchmove", start_lazy_map, options_map);
-        map_container.addEventListener("click", start_lazy_map, options_map);
-        map_container.addEventListener("mouseover", start_lazy_map, options_map);
-        let map_loaded = false;
-        function start_lazy_map() {
-            if (!map_loaded) {
-                let map_block = document.getElementById("ymap_lazy");
-                map_loaded = true;
-                map_block.setAttribute("src", map_block.getAttribute("data-src"));
-                map_block.removeAttribute("data-src");
-            }
-        }
         let x = document.getElementById("demo");
         let demoBtn = document.getElementById("submit");
         demoBtn.addEventListener("click", (() => {
